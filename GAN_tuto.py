@@ -12,7 +12,7 @@ import torchvision.transforms as transforms
 import torchvision.utils as vutils
 import numpy as np
 import matplotlib
-matplotlib.use("Agg")   # 완전 비인터랙티브, 파일 렌더용
+matplotlib.use("Agg")  
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from IPython.display import HTML
@@ -153,7 +153,6 @@ print("Starting Training Loop...")
 for epoch in range(num_epoch):
     # 한 에폭 내에서 배치 반복
     for i, data in enumerate(dataloader, 0):
-
         ############################
         # (1) D 신경망을 업데이트 합니다: log(D(x)) + log(1 - D(G(z)))를 최대화 합니다
         ###########################
